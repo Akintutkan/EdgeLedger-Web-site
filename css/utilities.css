@@ -1,0 +1,255 @@
+/* Variables */
+:root {
+    --primary-color: #28a745;
+    --secondary-color: #0000ff;
+    --dark-color: #333333;
+    --light-color: #ffffff;
+}
+
+/* Text Colors */
+.text-primary {
+    color: var(--primary-color);
+}
+
+.text-secondary {
+    color: var(--secondary-color);
+}
+
+/* Button */
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px 30px;
+    color: var(--light-color);
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn-primary,
+.bg-primary {
+    background: var(--light-color);
+    background-color: var(--primary-color);
+    color: var(--light-color);
+}
+
+.btn-secondary,
+.bg-secondary {
+    background: var(--light-color);
+    background-color: var(--secondary-color);
+    color: var(--light-color)
+}
+
+.btn-dark,
+.bg-dark {
+    background: var(--light-color);
+    background-color: var(--dark-color);
+}
+
+.btn-light,
+.bg-light {
+    background: var(--dark-color);
+    background-color: var(--light-color);
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 1px solid var(--light-color)
+}
+
+/* flex-items */
+.flex-items {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.flex-items>div {
+    padding: 20px;
+}
+
+/* flex columns */
+.flex-columns .row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.flex-columns .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.flex-columns .column .column-1,
+.flex-columns .column .column-2 {
+    height: 100%;
+}
+
+.flex-columns img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.flex-columns .column-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 30px;
+}
+
+.flex-columns h2 {
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.flex-columns h4 {
+    margin-bottom: 10px;
+}
+
+.flex-columns p {
+    margin: 20px 0;
+}
+
+/* Section Header */
+.section-header {
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.section-header h2 {
+    font-size: 40px;
+    margin: 20px 0;
+}
+
+.section-header h4 {
+    font-size: 18px;
+}
+
+.section-header p {
+    font-size: 16px;
+}
+
+.section-padding {
+    padding: 20px 20px 40px;
+}
+
+/* Flex grid */
+.flex-grid .row {
+    display: flex;
+    flex-direction: row;
+    padding: 0 40px;
+}
+
+.flex-grid .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+
+}
+
+/* flex-columns2 */
+.flex-columns2 .row {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+}
+
+.flex-columns2 .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.flex-columns2 .column .column-1,
+.flex-columns2 .column .column-2 {
+    height: 100%;
+}
+
+.flex-columns2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+.flex-columns2 .column-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 30px;
+}
+
+.flex-columns2 h2 {
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.flex-columns2 h4 {
+    margin-bottom: 10px;
+}
+
+.flex-columns2 p {
+    margin: 20px 0;
+}
+
+.flex-items img {
+    border-radius: 50%;
+}
+
+/* footer */
+    .footer{
+    display: flex;
+    flex-direction: column;
+}
+.footer .content{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+
+@media screen and (max-width:732px) {
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 10px;
+        height: 100px;
+        width: 100%;
+        background-color: var(--dark-color);
+        color: var(--light-color);
+        position: fixed;
+        top: 0;
+        opacity: 0.8;
+        font-size: smaller;
+    }
+    
+    .navbar a {
+        color: var(--light-color);
+        margin: 0 2px;
+        text-transform: capitalize;
+        padding: 5px 5px;
+    }
+    .navbar a:hover {
+        border-bottom: var(--primary-color) 2px solid;
+    }
+    .navbar ul {
+        display: flex;
+    }
+    .navbar .logo{
+        font-weight: 100;
+    }}
