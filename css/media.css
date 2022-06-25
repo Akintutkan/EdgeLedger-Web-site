@@ -1,31 +1,22 @@
-@media screen and (max-width:732px) {
+@media screen and (max-width:768px) {
     .navbar {
         display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0px 10px;
-        height: 100px;
-        width: 100%;
-        background-color: var(--dark-color);
-        color: var(--light-color);
-        position: fixed;
-        top: 0;
-        opacity: 0.8;
-        font-size: smaller;
+        flex-direction: column;
+       padding: 20px;
+        height: 120px;
+   
     }
     
     .navbar a {
-        color: var(--light-color);
-        margin: 0 2px;
-        text-transform: capitalize;
-        padding: 5px 5px;
+       
+        margin: 0 20px;
+              padding: 10px 20px;
     }
-    .navbar a:hover {
-        border-bottom: var(--primary-color) 2px solid;
+    .flex-items{
+       flex-direction: column;
     }
-    .navbar ul {
-        display: flex;
-    }
-    .navbar .logo{
-        font-weight: 100;
-    }}
+
+    .flex-columns .column,
+    .flex-grid .column{
+        flex:100%;
+        max-width:100%;}
