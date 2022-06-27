@@ -14,7 +14,9 @@
 .text-secondary {
     color: var(--secondary-color);
 }
-
+.text-light{
+    color: var(--light-color);
+}
 /* Button */
 .btn {
     cursor: pointer;

@@ -116,6 +116,14 @@ img{
     font-weight: 400;
     font-family: 'ınter', sans-serif ;
 }
+.iconsdark{
+    background-color: var(--dark-color);
+    color:var(--light-color);
+    padding:20px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+
+}
 .flex-items>img{
     border-radius: 50%;
 }
@@ -151,11 +159,11 @@ img{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 150px;
+    height: 170px;
 }
 .footer a{
     color: var(--light-color);
-    margin: 0 20px;
+    margin: 0 10px;
 }
 .footer a:hover{
     color:var(--primary-color)
